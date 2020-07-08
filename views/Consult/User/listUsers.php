@@ -35,8 +35,8 @@
             <td><?php echo $user->apellido; ?></td>
             <td><?php echo $user->mail; ?></td>
             
-            <td> <a href="<?php echo constant('URL').'consulta/seeUser/' . $user->id;?>">Editar</a> </td>
-            <!--<td> <a href="<?php echo constant('URL').'consulta/deleteUser/' . $user->id;?>">Eliminar</a> </td>-->
+            <td> <a href="<?php echo constant('URL').'consultaUser/seeUser/' . $user->id;?>">Editar</a> </td>
+            <!--<td> <a href="<?php echo constant('URL').'consultaUser/deleteUser/' . $user->id;?>">Eliminar</a> </td>-->
             <td><button class="bEliminar" data-matricula="<?php echo $user->id?>">Eliminar</button></td>
         </tr>
         <?php } ?>
