@@ -4,22 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>public/css/main.css">
     <title>Detalle de: <?php echo $this->user->nombre . ' ' . $this->user->apellido ?></title>
 </head>
 
 <body>
-
-    <style>
-        form,
-        h1 {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
-        #footer {
-            padding-left: 30px;
-        }
-    </style>
 
     <?php require 'views/header.php'; ?>
 

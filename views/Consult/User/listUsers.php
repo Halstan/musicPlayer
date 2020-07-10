@@ -38,8 +38,7 @@
                         <td><?php echo $user->mail; ?></td>
 
                         <td> <a href="<?php echo constant('URL') . 'consultaUser/seeUser/' . $user->id; ?>">Editar</a> </td>
-                        <!--<td> <a href="<?php echo constant('URL') . 'consultaUser/deleteUser/' . $user->id; ?>">Eliminar</a> </td>-->
-                        <td><button class="bEliminar" data-matricula="<?php echo $user->id ?>">Eliminar</button></td>
+                        <td><button class="bEliminar" data-id="<?php echo $user->id ?>">Eliminar</button></td>
                     </tr>
                 <?php } ?>
             </tbody>
@@ -48,6 +47,7 @@
 
     </div>
 
+    <script src="public/js/main.js"></script>
     <?php require 'views/footer.php'; ?>
 
 </body>

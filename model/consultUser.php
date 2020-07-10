@@ -69,6 +69,17 @@ class consultUser extends Model{
         }
 
     }
+
+    public function deleteUser($id){
+        $query = $this->db->connect()->prepare('DELETE FROM user WHERE id = :id');
+
+        try{
+            $query->execute(['id' => $id]);
+            return true;
+        }catch(PDOException $e){
+            return false;
+        }
+    }
 }
 
 ?>

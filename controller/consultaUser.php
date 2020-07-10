@@ -64,6 +64,19 @@ class consultaUser extends Controller{
         }
         $this->render();
     }
+
+    function deleteUser($param = null){
+        $this->getModel();
+        $id = $param[0];
+
+        if($this->model->deleteUser($id)){
+            $mensaje = "Usuario eliminado correctamente";
+        }else{
+            $mensaje = "Error al eliminar usuario";
+        }
+
+        echo $mensaje;
+    }
 }
 
 ?>
