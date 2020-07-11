@@ -53,6 +53,10 @@ class App{
             $controller = new Errors();
         }
 
+        /*if(!file_exists($archivoController)){
+            $controller = new Errors();
+        }*/
+
         
     }
 }

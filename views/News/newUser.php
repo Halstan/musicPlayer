@@ -16,7 +16,7 @@
     <h1>¡Registrate!</h1>
     <div><?php echo $this->mensaje; ?></div>
 
-    <form action="<?php echo constant('URL'); ?>Nuevo/registUser" method="POST">
+    <form action="<?php echo constant('URL'); ?>newUser/registUser" method="POST">
         <div class="form-row">
 
             <div class="form-group col-md-6">

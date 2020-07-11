@@ -2,7 +2,7 @@
 
 include_once 'model/newUser.php';
 
-class Nuevo extends Controller{
+class newUser extends Controller{
 
     function __construct(){
         parent::__construct();
@@ -23,7 +23,7 @@ class Nuevo extends Controller{
         $passhashed = password_hash($password, PASSWORD_DEFAULT, ['cost' => 10]);
         
         $mensaje = "";
-        $this->model = new newUser();
+        $this->model = new nuevoUser();
         //LINE 27 ERROR
         if($this->model->insertUser(['nombre' => $nombre, 
                 'apellido' => $apellido, 'correo' => $mail, 'pass' => $passhashed])){
