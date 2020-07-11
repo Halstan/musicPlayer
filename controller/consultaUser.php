@@ -1,6 +1,6 @@
 <?php
 
-include_once 'model/consultUser.php';
+include_once 'model/modelUser/consultUser.php';
 
 //REFERENCE IN views/listUsers
 class consultaUser extends Controller{

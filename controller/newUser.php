@@ -1,6 +1,6 @@
 <?php
 
-include_once 'model/newUser.php';
+include_once 'model/modelUser/newUser.php';
 
 class newUser extends Controller{
 

@@ -11,7 +11,10 @@
 
     <h1>Bienvenido a tMusic</h1>
 
-    <p>tMusic es una pagina en la que puedes subir tus audios, admitimos archivos: mp3, wav y flac</p>
+    <p><strong>tMusic</strong> es una pagina en la que puedes subir tus audios, admitimos archivos: mp3, wav y flac.</p>
+
+    
+    <p><strong>tMusic</strong> no se hace responsable por los audios subidos por los usuarios.</p>
 
     <?php require 'views/footer.php';?>
 </body>
