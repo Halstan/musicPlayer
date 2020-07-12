@@ -4,4 +4,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
 
+php_value upload_max_filesize 20M
+php_value post_max_size 30M
+php_value max_execution_time 180
+
 ErrorDocument 404 http://localhost/Curso%20PHP/Reproductor%20musica/views/Errors/404.php
