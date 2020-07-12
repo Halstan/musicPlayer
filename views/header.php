@@ -37,7 +37,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="<?php echo constant('URL'); ?>consultaUser">Lista de usuarios</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="<?php echo constant('URL'); ?>consultaAudio">Lista de audios</a>
+                        <a class="dropdown-item" href="<?php echo constant('URL'); ?>consultaAudio/api">Lista de audios</a>
                     </div>
                 </li>
                 <li class="nav-item active">

@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+
+body {
+    background: rgb(22, 35, 59);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#menuContainer{
+    background-color: rgb(33, 88, 155);
+    color: white;
+    border-bottom: solid 1px #ccc;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#logo{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 22px;
+    width: 100px;
+}
+
+#audios{
+    min-height: 900px;
+    width: 500px;
+    margin: 50px auto;
+}
+
+#audios .audio{
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#audios .audio .profile, #audios .audio .content{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#audios .audio .profile img{
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+#audios .audio .profile{
+    width: 80px;
+}
+
+#audios .audio .content{
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 409px;
+}
+
+#audios .audio .content .author{
+    padding: 10px 0 5px 0;
+}
+
+#audios .audio .content .author .name{
+    font-weight: bolder;
+}
+
+#audios .audio .content .text{
+    padding: 5px 0 10px 0;
+}
+#audios .audio .content .image{
+    padding: 10px 0;
+}
+#audios .audio .content .image img{
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#moreAudios{
+    height: 100px;
+}
