@@ -1,6 +1,6 @@
-<div id="footer">
+<footer id="footer">
 Enzo Arauco 2020
-</div>
+</footer>
 
 <script src="<?php echo constant('URL');?>public/js/jquery-3.5.1.slim.min.js"></script>
 <script src="<?php echo constant('URL');?>public/js/bootstrap.min.js"></script>

@@ -10,7 +10,6 @@
 
 <body>
 
-
     <?php require 'views/header.php'; ?>
 
     <h1>¡Registrate!</h1>
