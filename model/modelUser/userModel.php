@@ -6,6 +6,7 @@ class User{
     public $apellido;
     public $mail;
     public $password;
+    public $fecha_reg;
 }
 
 ?>

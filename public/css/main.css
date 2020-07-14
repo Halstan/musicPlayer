@@ -4,7 +4,12 @@ h1{
   padding-right: 30px;
 }
 
-.message{
+#error{
+  color: red;
+  padding-left: 30px;
+}
+
+#message{
   padding-left: 30px;
 }
 

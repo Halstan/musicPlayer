@@ -22,6 +22,7 @@
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>Correo</th>
+                    <th>Fecha de registro</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -38,6 +39,7 @@
                         <td><?php echo $user->nombre; ?></td>
                         <td><?php echo $user->apellido; ?></td>
                         <td><?php echo $user->mail; ?></td>
+                        <td><?php echo $user->fecha_reg; ?></td>
 
                         <td> <a href="<?php echo constant('URL') . 'consultaUser/seeUser/' . $user->id; ?>">Editar</a> 
                         <button class="bEliminar" data-id="<?php echo $user->id ?>">Eliminar</button></td>
