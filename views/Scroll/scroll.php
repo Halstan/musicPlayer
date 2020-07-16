@@ -7,14 +7,9 @@
     <title>Lista de canciones</title>
 </head>
 <body>
-    
+<?php require 'views/header.php';?>
 
-    <div id="mainContainer">
-        <div id="menuContainer">
-            <div id="logo">
-                tAudio
-            </div>
-        </div>
+    
 
         <div id="audios">
 
@@ -25,7 +20,7 @@
     </div>
 
     <script src="<?php echo constant('URL');?>public/js/main.js"></script>
-
+    <?php require 'views/footer.php';?>
     
 </body>
 </html>

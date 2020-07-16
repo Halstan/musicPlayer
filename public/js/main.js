@@ -92,7 +92,10 @@ function renderItems(data){
         </div>
         <div class="content">
             <div class="author">
+            <audio controls>
+                <source src="http://localhost/Curso%20PHP/Reproductor%20musica/uploads/${element.url}" type="audio/mpeg">
                 <span class="name">${element.url}</span>
+                </audio>
                 <span class="name"><br>
                 Fecha de subida: ${element.fecha_reg}</span>
             </div>
