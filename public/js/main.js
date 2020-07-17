@@ -84,28 +84,23 @@ function requestData(n){
 }
 
 function renderItems(data){
-    let tuits = document.querySelector('#audios');
+    let audios = document.querySelector('#audios');
     data.forEach(element => {
-        tuits.innerHTML += `<div class="audio">
-        <div class="profile">
-            <span class="name">${element.nombre}</span>
-        </div>
-        <div class="content">
-            <div class="author">
-            <audio controls>
-                <source src="http://localhost/Curso%20PHP/Reproductor%20musica/uploads/${element.url}" type="audio/mpeg">
-                <span class="name">${element.url}</span>
-                </audio>
-                <span class="name"><br>
-                Fecha de subida: ${element.fecha_reg}</span>
+        audios.innerHTML += `<div class="audios">
+
+        <div class="card w-75">
+        <audio controls ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" preload="auto" loop>
+        <source src="http://localhost/Curso%20PHP/Reproductor%20musica/uploads/${element.url}" type="audio/mpeg">
+        <span class="name">${element.url}</span>
+        </audio>
+            <div class="card-body">
+                <h5 class="card-title"><strong>Titulo:</strong> ${element.nombre}</h5>
+                <p class="card-text">Fecha de subida: ${element.fecha_reg}</p>
+                <p class="card-text">Descripcion: ${element.descripcion}</p>
+                <p class="card-text">Usuario que lo subio: ${element.id_user}</p>
             </div>
-            <div class="text">
-                Descripcion del video: ${element.descripcion}
             </div>
-            <div class="text">
-                <span class="name">Usuario que lo subio: ${element.id_user}</span>
-            </div>
-        </div>
+            <br>
     </div>`
     });
 }

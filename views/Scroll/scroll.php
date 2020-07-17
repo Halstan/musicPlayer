@@ -9,8 +9,6 @@
 <body>
 <?php require 'views/header.php';?>
 
-    
-
         <div id="audios">
 
         </div>

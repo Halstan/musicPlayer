@@ -41,12 +41,12 @@ body {
     margin: 20px 0;
 }
 
-#audios .audio .profile, #audios .audio .content{
+#audios .audio, #audios .audio .content{
     display: inline-block;
     vertical-align: top;
 }
 
-#audios .audio .profile img{
+#audios .audio img{
     border-radius: 50%;
     box-sizing: border-box;
     padding: 10px;
@@ -74,10 +74,10 @@ body {
 #audios .audio .content .text{
     padding: 5px 0 10px 0;
 }
-#audios .audio .content .image{
+#audios .audio .content{
     padding: 10px 0;
 }
-#audios .audio .content .image img{
+#audios .audio .content{
     box-sizing: border-box;
     border-radius: 5px;
     width: 100%;
