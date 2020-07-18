@@ -1,11 +1,26 @@
 <?php
 
 class Database{
-    private $host   = 'localhost';
+    /*private $host   = 'localhost';
     private $db   = 'musicdb';
     private $user = 'root';
     private $password = 'mysql';
-    private $charset  = 'utf8mb4';
+    private $charset  = 'utf8mb4';*/
+
+    private $host;
+    private $db;
+    private $user;
+    private $password;
+    private $charset;
+
+    public function __construct(){
+        $this->host   = constant('HOST');
+        $this->db   = constant('DB');
+        $this->user = constant('USER');
+        $this->password = constant('PASSWORD');
+        $this->charset  = constant('CHARSET');
+    }
+    
 
     function connect(){
         try{

@@ -1,14 +1,18 @@
 <?php
 
-require_once '../libs/database.php';
+include_once '../config/config.php';
+include_once '../libs/database.php';
+include_once '../libs/model.php';
+include_once 'audioModel.php';
 
-class consultAudio extends Database{
+class consultAudio extends Model{
 
     function __construct(){
+        parent::__construct();
     }
 
     function getDataAudio($section){
-        $query = $this->connect()->prepare('SELECT * FROM music limit :section, 2');
+        $query = $this->db->connect()->prepare('SELECT * FROM music limit :section, 2');
 
         $query->execute(['section' => $section]);
 
