@@ -10,6 +10,7 @@
 
 <body>
 
+<br>
     <?php require 'views/header.php'; ?>
 
     <h1>Detalle de: <?php echo $this->user->nombre . ' ' . $this->user->apellido ?></h1>

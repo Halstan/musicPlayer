@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHg5U7C_WdIMKqcNfKiWyAxrfuJ70_T9vWlA&usqp=CAU">
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>public/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>public/css/main.css">
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHg5U7C_WdIMKqcNfKiWyAxrfuJ70_T9vWlA&usqp=CAU">
 </head>
 
 <body>
@@ -38,8 +37,11 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="<?php echo constant('URL'); ?>consultaUser">Lista de usuarios</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="<?php echo constant('URL'); ?>consultaAudio/api">Lista de audios</a>
+                        <a class="dropdown-item" href="<?php echo constant('URL'); ?>consultaAudio">Lista de audios</a>
                     </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<?php echo constant('URL'); ?>consultaAudio/api">Todos los audios</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="<?php echo constant('URL'); ?>ayuda">Ayuda</a>

@@ -89,7 +89,7 @@ function renderItems(data){
         audios.innerHTML += `<div class="audios">
 
         <div class="card w-75">
-        <audio controls ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" preload="auto" loop>
+        <audio controls ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" preload="auto">
         <source src="http://localhost/Curso%20PHP/Reproductor%20musica/uploads/${element.url}" type="audio/mpeg">
         <span class="name">${element.url}</span>
         </audio>
@@ -97,7 +97,7 @@ function renderItems(data){
                 <h5 class="card-title"><strong>Titulo:</strong> ${element.nombre}</h5>
                 <p class="card-text">Fecha de subida: ${element.fecha_reg}</p>
                 <p class="card-text">Descripcion: ${element.descripcion}</p>
-                <p class="card-text">Usuario que lo subio: ${element.id_user}</p>
+                <p class="card-text">Subido por: ${element.id_user}</p>
             </div>
             </div>
             <br>

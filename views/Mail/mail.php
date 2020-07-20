@@ -9,9 +9,9 @@
 <body>
 
     <?php require 'views/header.php'; ?>
-
+    <br>
     <h1>¡Contactame!</h1>
-    <div><?php echo $this->mensaje; ?></div>
+    <div id="message"><?php echo $this->mensaje; ?></div>
     <form action="<?php echo constant('URL'); ?>send/sendMail" method="POST">
         <label for="name">Nombre: <input type="text" name="name" id="name" class="form-control"></label><br><br>
 

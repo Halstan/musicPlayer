@@ -39,24 +39,23 @@ class newAudio extends Controller
             if ($tipoArchivo == "mp3" || $tipoArchivo == "MP3" || $tipoArchivo == "wav" || $tipoArchivo == "flac") {
                 //SE VALIDO EL ARCHIVO CORRECTAMENTE
                 if (move_uploaded_file($_FILES['url']["tmp_name"], $archivo)) {
-                    //echo "El archivo se subio correctamente";
+                    $mensaje = "";
+                    $this->model = new nuevoAudio();
+
+                    if ($this->model->insertAudio(['nombre' => $nombre, 'url' => $url, 'descripcion' => $descripcion, 'id_user' => $id_user])) {
+                        $mensaje = "Audio guardado exitosamente";
+                    } else {
+                        $mensaje = "Error al guardar audio";
+                    }
+
+                    
                 } else {
-                    //echo "Error al subir archivo";
+                    $mensaje = "Error al subir audio";
                 }
             } else {
-                //echo "Solo se admiten archivo png";
+                $mensaje = "Solo se admiten archivos .mp3";
             }
         }
-
-        $mensaje = "";
-        $this->model = new nuevoAudio();
-
-        if ($this->model->insertAudio(['nombre' => $nombre, 'url' => $url, 'descripcion' => $descripcion, 'id_user' => $id_user])) {
-            $mensaje = "Audio guardado exitosamente";
-        } else {
-            $mensaje = "Error al guardar audio";
-        }
-
         $this->view->mensaje = $mensaje;
         $this->render();
     }

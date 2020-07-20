@@ -9,6 +9,7 @@
 
     <?php require 'views/header.php';?>
 
+    <br>
     <h1>Bienvenido a tMusic</h1>
 
     <p><strong>tMusic</strong> es una pagina en la que puedes subir tus audios, admitimos archivos: mp3, wav y flac.</p>

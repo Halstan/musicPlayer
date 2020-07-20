@@ -9,6 +9,7 @@
 
 <body>
     <?php require 'views/header.php'; ?>
+    <br>
     <div id="main">
 
         <h1 class="center">Lista de usuarios</h1>

@@ -10,7 +10,7 @@
 <body>
 
     <?php require 'views/header.php'; ?>
-
+    <br>
     <h1>Subir audio</h1>
     <div id="message"><?php echo $this->mensaje; ?></div>
 

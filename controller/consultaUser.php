@@ -21,8 +21,6 @@ class consultaUser extends Controller{
         $this->view->render('Consult/User/listUsers');
     }
 
-    
-
     function seeUser($param){
         $this->getModel();
         $idUser = $param[0];

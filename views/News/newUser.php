@@ -11,7 +11,7 @@
 <body>
 
     <?php require 'views/header.php'; ?>
-
+    <br>
     <h1>¡Registrate!</h1>
     <div id="message"><?php echo $this->mensaje; ?></div>
 

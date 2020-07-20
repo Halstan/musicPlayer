@@ -9,6 +9,7 @@ class send extends Controller{
 
     function __construct(){
         parent::__construct();
+        $this->view->mensaje = "";
     }
 
     function render(){
@@ -22,8 +23,8 @@ class send extends Controller{
     $mail->Host = 'smtp.office365.com';
     $mail->Port = 587;
     $mail->SMTPAuth = true;
-    $mail->Username = 'YOUR MAIL PROVIDER';
-    $mail->Password = 'MAIL PASSWORD';
+    $mail->Username = 'enzoarauco83@hotmail.com';
+    $mail->Password = 'PASSWORD';
     $mail->SMTPSecure = 'tls';
     $mail->SMTPOptions = array(
         'ssl' => array(
@@ -32,15 +33,15 @@ class send extends Controller{
         'allow_self_signed' => true
         )
         );
-    $mail->setFrom('YOUR MAIL PROVIDER', 'Contacto');
-    $mail->addAddress('ADDRESS', 'Contacto');
+    $mail->setFrom('enzoarauco83@hotmail.com', 'Contacto');
+    $mail->addAddress('enzoarauco@gmail.com', 'Contacto');
     if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
         $mail->Subject = 'Formulario de contacto';
         $mail->isHTML(false);
         $mail->Body = <<<EOT
-            Email: {$_POST['email']}
-            Name: {$_POST['name']}
-            Message: {$_POST['message']}
+            Correo: {$_POST['email']}
+            Nombre: {$_POST['name']}
+            Mensaje: {$_POST['message']}
             EOT;
         if (!$mail->send()) {
             $mensaje = 'Algo ha salido mal. Intentelo nuevamente';
