@@ -14,6 +14,8 @@ class consultaAudio extends Controller{
         $this->model = new consultAudio();
     }
 
+    
+
     function api(){
         $this->view->render('Scroll/scroll');
     }

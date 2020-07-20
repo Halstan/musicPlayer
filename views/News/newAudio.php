@@ -12,7 +12,7 @@
     <?php require 'views/header.php'; ?>
 
     <h1>Subir audio</h1>
-    <div class="message"><?php echo $this->mensaje; ?></div>
+    <div id="message"><?php echo $this->mensaje; ?></div>
 
     <form action="<?php echo constant('URL'); ?>newAudio/registAudio" method="POST" enctype="multipart/form-data">
         <div class="form-row">

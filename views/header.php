@@ -7,6 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>public/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>public/css/main.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHg5U7C_WdIMKqcNfKiWyAxrfuJ70_T9vWlA&usqp=CAU">
 </head>
 
 <body>

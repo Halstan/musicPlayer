@@ -20,7 +20,7 @@ class consultUser extends Model{
                 $item->nombre = $row['nombre'];
                 $item->apellido = $row['apellido'];
                 $item->mail = $row['correo'];
-                $item->password = $row['password'];
+                $item->password = $row['pass'];
                 $item->fecha_reg = $row['fecha_reg'];
 
                 array_push($items, $item);
