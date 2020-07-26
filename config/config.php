@@ -1,6 +1,6 @@
 <?php
 
-define('URL', 'http://localhost/Curso%20PHP/Reproductor%20musica/');
+define('URL', 'http://localhost/Curso%20PHP/reproductorMusica/');
 
 define('HOST', 'localhost');
 define('DB', 'musicdb');

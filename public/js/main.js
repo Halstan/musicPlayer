@@ -7,7 +7,7 @@ botones.forEach(boton => {
         const confirm = window.confirm('¿Desea eliminar este usuario ' + id + '?');
 
         if(confirm){
-            httpRequest("http://localhost/Curso%20PHP/Reproductor%20musica/consultaUser/deleteUser/" + id, function(){
+            httpRequest("http://localhost/Curso%20PHP/reproductorMusica/consultaUser/deleteUser/" + id, function(){
                 document.querySelector(`#respuesta`).innerHTML = this.responseText;
                 const tbody = document.querySelector('#tbodyUsers');
                 const fila = document.querySelector('#fila-' + id);
@@ -74,7 +74,7 @@ async function loadItems(){
 }
 
 function requestData(n){
-    const url = 'http://localhost/Curso%20PHP/Reproductor%20musica/api/api.php?action=more&page=' + n;
+    const url = 'http://localhost/Curso%20PHP/reproductorMusica/api/api.php?action=more&page=' + n;
 
     const response = this.fetch(url)
     .then(res => res.json())
@@ -90,7 +90,7 @@ function renderItems(data){
 
         <div class="card w-75">
         <audio controls ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" preload="auto">
-        <source src="http://localhost/Curso%20PHP/Reproductor%20musica/uploads/${element.url}" type="audio/mpeg">
+        <source src="http://localhost/Curso%20PHP/reproductorMusica/uploads/${element.url}" type="audio/mpeg">
         <span class="name">${element.url}</span>
         </audio>
             <div class="card-body">
